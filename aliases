@@ -1,0 +1,12 @@
+alias ls='ls --color=auto'
+alias sudo='sudo '
+alias ll='ls -alh'
+alias e='emacs -nw'
+
+# git
+alias gs='git status'
+alias gd='git diff'
+alias go='git checkout'
+alias gc='git commit'
+alias ga='git add'
+alias gh='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'

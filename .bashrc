@@ -20,14 +20,4 @@ eval "$(pyenv init -)"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # aliases
-alias ls='ls --color=auto'
-alias sudo='sudo '
-alias ll='ls -alh'
-alias e='emacs -nw'
-
-# git
-alias gs='git status'
-alias gd='git diff'
-alias go='git checkout'
-alias gc='git commit'
-alias ga='git add'
+source "~/dotfiles/aliases"
