@@ -20,4 +20,4 @@ eval "$(pyenv init -)"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # aliases
-source "~/dotfiles/aliases"
+source ~/dotfiles/aliases
