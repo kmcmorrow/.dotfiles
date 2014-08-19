@@ -3,6 +3,9 @@ alias sudo='sudo '
 alias ll='ls -alh'
 alias e='emacs -nw'
 
+alias be='bundle exec'
+alias cuke='bundle exec cucumber'
+
 # git
 alias gs='git status'
 alias gd='git diff'
