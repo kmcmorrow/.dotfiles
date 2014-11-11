@@ -5,6 +5,8 @@ alias e='emacs -nw'
 
 alias be='bundle exec'
 alias cuke='bundle exec cucumber'
+alias cukep='cuke -f progress'
+alias cov='start firefox coverage/index.html'
 
 # git
 alias gs='git status'
