@@ -1,9 +1,3 @@
-#
-# ~/.bashrc
-#
-
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
 source ~/.git-prompt.sh
 
 #PS1='[\u@\h \W]\$ '
@@ -12,12 +6,3 @@ PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \W\[\033[01;33m\]$(__git_ps1 " (%s)")\[
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 export EDITOR="emacs"
-
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-# aliases
-source ~/dotfiles/aliases
