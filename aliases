@@ -16,3 +16,6 @@ alias gc='git commit'
 alias ga='git add'
 alias gh='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 alias gb='git branch'
+
+# functions
+lastmigration () { cat db/migrate/`ls -t db/migrate | head -1`; }
