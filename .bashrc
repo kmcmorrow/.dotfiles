@@ -1,4 +1,4 @@
-source ~/.git-prompt.sh
+source ~/dotfiles/.git-prompt.sh
 
 #PS1='[\u@\h \W]\$ '
 #PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
