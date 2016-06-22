@@ -7,6 +7,7 @@ alias be='bundle exec'
 alias cuke='bundle exec cucumber'
 alias cukep='cuke -f progress'
 alias cov='start firefox coverage/index.html'
+alias dj='bin/delayed_job run --exit-on-complete'
 
 # git
 alias gs='git status'
@@ -16,6 +17,11 @@ alias gc='git commit'
 alias ga='git add'
 alias gh='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 alias gb='git branch'
+alias gr='git rebase'
+alias grm='git rebase master'
+alias gria='git rebase -i --autosquash'
+alias grc='git rebase --continue'
 
 # functions
 lastmigration () { cat db/migrate/`ls -t db/migrate | head -1`; }
+lastmigrationfile () { echo db/migrate/`ls -t db/migrate | head -1`; }
