@@ -9,6 +9,7 @@ alias cukep='cuke -f progress'
 alias cov='start firefox coverage/index.html'
 alias dj='bin/delayed_job run --exit-on-complete'
 alias deploy='bundle exec cap production deploy'
+alias deploy_assets='bundle exec cap production deploy && bundle exec cap production deploy:clobber_assets && bundle exec cap production deploy:compile_assets'
 
 # git
 alias gs='git status'
