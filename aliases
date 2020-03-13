@@ -8,7 +8,8 @@ alias cuke='bundle exec cucumber'
 alias cukep='cuke -f progress'
 alias cov='start firefox coverage/index.html'
 alias dj='bin/delayed_job run --exit-on-complete'
-alias deploy='bundle exec cap production deploy'
+alias deploy='bundle exec cap --hosts=cenitsys.com,cenitsys2.com production deploy'
+alias deploy_cs='bundle exec cap --hosts=cenitsoftware.ie production deploy'
 alias deploy_assets='bundle exec cap production deploy && bundle exec cap production deploy:clobber_assets && bundle exec cap production deploy:compile_assets'
 
 # git
@@ -27,3 +28,6 @@ alias gria='git rebase --interactive --autosquash'
 # functions
 lastmigration () { cat db/migrate/`ls -t db/migrate | head -1`; }
 lastmigrationfile () { echo db/migrate/`ls -t db/migrate | head -1`; }
+
+alias doc='yard server --reload -p 4000'
+
